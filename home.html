@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .search-bar input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid white;
+        background: #000;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #D2042D;
+    }
+
+    header {
+        background-color: #222;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #city-section {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #city-select {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #posters {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .heroimage {
+        height: 300px;
+        width: 230px;
+        border-radius: 5px;
+        margin: 0 75px;
+
+        
+    }
+
+    .cta {
+        background-color: #e63946;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 20px auto;  /* Center the button */
+        display: block;  
+            /* Make the button block-level to center it */
+    }
+
+    #hero {
+        background: url('concert-bg.jpg') no-repeat center center/cover;
+        height: 400px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Centering using text-align and margin */
+        .button-container {
+            text-align: center; /* Centers the inline element (button) horizontally */
+            margin-top: 50px; /* Adjust the top margin as needed */
+        }
+
+        .book-button {
+            background-color: #e63946;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .book-button:hover {
+            background-color: #d32f2f;
+        }
+
+        p {
+            margin: 5px 0; /* Reduces top and bottom margin */
+        }
+
+
+
+</style>
+
+<body>
+    <header>
+        <div class="logo">Concert Hub</div>
+        <nav>
+            <ul>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <div class="user-options">
+            <a href="signin.html">Sign In</a>
+
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search for your favourite artists">
+        </div>
+
+        <section id="city-section">
+            <label for="city-select">Select Your City:</label>
+            <select id="city-select">
+                <option value="all">All Cities</option>
+                <option value="new-york">New York</option>
+                <option value="los-angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="houston">Houston</option>
+                <option value="miami">Miami</option>
+            </select>
+        </section>
+
+       
+
+        <section id="posters">
+            <img class="heroimage" src="Graphic design.jpg">
+            <img class="heroimage" src="download (1).jpg">
+            <img class="heroimage" src="download.jpg">
+            <img class="heroimage" src="X.jpg">
+        </section>
+
+        <!-- Centered Get Your Tickets Button -->
+        <a href="tickets.html" class="book-button">Get your Tickets</a>
+
+
+        <section id="hero">
+            <h1 style=font-size: 48px;>Experience Live Music Like Never Before</h1>
+        </section>
+        
+
+        <section id="events">
+            <h2 style>Today's Concerts</h2>
+            <div class="event-card">
+                <!-- Wrap the image with a link -->
+                <a href="book.html">
+                    <img src="Graphic design.jpg" alt="theweekend" width="250px" height="300px">
+                </a>
+                <h3>The Weeknd</h3>
+                <p>Date: 04/10/2024</p>
+                <p>Venue: New York</p>
+            </div>
+        </section>
+        
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-item">
+                <a href="https://i.pinimg.com/736x/d1/5d/44/d15d44987ccf6bd85062e05d2ccc6dd0.jpg">Wonder Tour</a>
+            </div>
+            <div class="gallery-item">
+                <a href="https://i.pinimg.com/736x/41/30/b9/4130b968d56fba3d3c11183aa216a084.jpg">After Hours</a>
+            </div>
+            <div class="gallery-item"></div>
+                <a href="https://i.pinimg.com/564x/d2/27/8e/d2278ecde2b01a771bb4422274a45b7c.jpg">Sweetner</a>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Concert Hub | <a href="#contact">Contact Us</a></p>
+    </footer>
+</body>
+</html>
